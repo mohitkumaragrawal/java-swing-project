@@ -27,5 +27,7 @@ RUN mkdir /app
 # Copy your Java application JAR file to the container
 COPY build/libs/*.jar /app/
 
+CMD ["java", "-cp", "/app/*", "proj.Main"]
+
 # Command to run your Java application
 # CMD ["java", "-jar", "/app/proj-1.0-SNAPSHOT.jar"]
