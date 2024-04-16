@@ -21,7 +21,7 @@
 # CMD ["java", "-jar", "/app/proj-1.0-SNAPSHOT.jar"]
 
 
-FROM maven:3.5.0-jdk-8
+FROM openjdk
 RUN mkdir /app
 
 # Copy your Java application JAR file to the container
